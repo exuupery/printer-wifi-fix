@@ -1,0 +1,33 @@
+# Настройки конкретного принтера: IP и MAC локальной сети. Образец - printer.example.psd1
+printer*.psd1
+!printer.example.psd1
+
+# Служебные файлы Windows
+desktop.ini
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Артефакты работы скриптов (живут в %ProgramData%\PrinterWiFiFix, в репозиторий не кладём)
+PrinterWiFiFix/
+*.printerExport
+*.log
+*.log.old
+
+# Секреты и локальные конфиги
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+
+# Бэкапы, временные файлы, архивы
+*.bak
+*.tmp
+*.zip
+*.7z
+
+# Редакторы и инструменты
+.vscode/
+.idea/
